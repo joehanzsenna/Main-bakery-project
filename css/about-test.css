@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+.u-template-list__no li{
+    padding-left: 6rem;
+    width: 90%;
+    font-size: 1.6rem;
+    line-height: 25px;
+    color: black;
+    list-style-type: decimal;
+}
+
+.template-about__header {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.template-about__paragraph {
+    font-size: 1.5rem;
+    color: grey;
+    margin-bottom: 2rem;
+    line-height: 25px;
+}
+
+.drop {
+    margin: 5rem ;
+}
+.drop-down {
+    font-size: 1.5rem;
+    
+}
+

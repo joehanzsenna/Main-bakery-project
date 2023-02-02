@@ -1,0 +1,461 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.nav-container {
+    width: 100vw;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 0.4fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+.logo {
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 4px 6px 6px black;
+}
+.logo:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    width: 80%;
+    justify-self: end;
+    list-style-type: none;
+    position: relative;
+}
+.nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.nav-links:hover{
+    color: blue;
+}
+.menu-toggle .bars {
+    width: 30px;
+    height: 5px;
+    margin: 5px auto;
+    background-color: black;
+    display: none;
+}
+.icon- {
+    font-size: 1.5rem;
+    margin-top : .5rem;
+}
+
+.sub-menu {
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    font-size: 1.3rem;
+    text-align: start;
+    display: none;
+    border-radius: 0 0 5px 5px;
+}
+
+ .sub-menu li,.sub-menu__links{
+    text-decoration: none;
+    padding: 2rem 4rem;
+    color: #000;
+}
+
+.sub-menu li:hover {
+    background-color: grey;
+}
+.nav-menu li:hover .sub-menu {
+    display: block;
+    transition: 1s ease;
+}
+.sub-menu-2 {
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    font-size: 1.3rem;
+    text-align: start;
+    display: none;
+    border-radius: 0 0 5px 5px;
+}
+.sub-menu-2 li,.sub-menu__links-2{
+    text-decoration: none;
+    padding: 2rem 4rem;
+    color: #000;
+}
+.sub-menu-2 li:hover {
+    background-color: grey;
+}
+
+.nav-menu li:hover .sub-menu-2 {
+    display: block;
+    transition: 1s ease;
+}
+/* section container  */
+
+
+.section-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/Baking-images/img0001.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container--contents{
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}   
+.container--contents h1{
+        width: 60%;
+        color: white;
+        font-size: 5rem;
+        font-weight: 100;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+
+    }
+.container--contents p {
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .container--contents__btn2{
+        padding: 2rem 3rem;
+        color: white;
+        background-color:transparent;
+        border: 2px solid white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .container--contents__btn2:hover{
+        background-color: white;
+        color: black;
+
+    }
+
+    .container--contents__btn2 a{
+        color: white;
+        text-decoration: none;
+    }
+
+/* friendly section */
+
+.section-friendly {
+        width: 100vw;
+        height: 100vh;
+        background-color: whitesmoke;
+    }
+.friendly {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+    
+.friendly__img {
+    width: 70%;
+    text-align: start;
+
+}
+.friendly__img-donut {
+    width: 100%;
+    height: auto;
+}
+.friendly__seo {
+    margin: 0 auto;
+    width: 100%;
+    text-align: start;
+}
+
+.friendly__seo h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+.friendly__seo p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 35rem;
+    margin-bottom: 1rem;
+    color: gray;
+    font-weight: 100;
+}
+
+/* portfolio section  */
+
+.section-portfolio {
+    background-color: rgb(238, 238, 238);
+    width: 100vw;
+    height: 100vh;
+}
+.friendly__img-bread {
+    width: 70%;
+    justify-self: end;
+}
+
+/* paralex section  */
+
+.parallex-section{
+    max-width: 100vw;
+    height: 70vh;
+    position: relative;
+    background: url(/Baking-images/bakery001.jpg);
+    background-size: cover;
+}
+
+.parallex {
+    text-align: center;
+    width: 70%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.parallex h2 {
+    font-size: 5rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.parallex p {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* limitless edition  */
+
+.limitless-section {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    background: whitesmoke;
+
+}
+
+.limitless {
+    padding-top: 5rem;
+    padding-bottom: 0;
+}
+
+.limitless h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+.limitless p {
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: grey;
+    line-height: 1.5rem;
+
+}
+.limitless-img{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/* latest session  */
+
+.latest-session{
+    width: 100vw;
+    background-color: #010138;
+    text-align: center;
+}
+
+.latest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.latest-images{
+    position: relative;
+    width: 100%;
+        
+}
+.latest-images__img{
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.latest-images__overlay{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.latest-images__overlay-text{
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+            
+.latest-images:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+/* customers section  */
+
+.customers-section {
+    background: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url(/Baking-images/grid006.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    padding: 10rem 0;
+    text-align: center;
+}
+.customers-content {
+    margin: 0 auto;
+    width: 50%;
+}
+.profile-img{
+    width: 20%;
+    border-radius: 50%;
+}
+.profile-name{
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+/* main clients section  */
+
+.main-clients__section {
+    width: 100vw;
+    padding: 15rem 0;
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+.main-clients__icons {
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.fa01{
+    color: blue;
+}
+.fa02{
+    color: #00009b;
+}
+.fa03{
+    color: red;
+}
+.fa04{
+    color: blue;
+}
+.fa-brands{
+    font-size: 4rem;
+    opacity: .5;
+}
+.fa-brands:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* footer section */
+
+.footer {
+    width: 100vw;
+    height: auto;
+   
+    display: grid;
+    grid-template-columns: auto;
+}
+.footer-first{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 6rem 0; 
+    background-color: whitesmoke;
+}
+.footer-first-text{
+    font-size: 2rem;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 5rem;
+    align-self: center;
+}
+.footer-second{
+    width: 100%;
+    background-color: black;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-second__text{
+    color: white;
+    font-size: 1.5rem;
+    justify-self: start;
+    align-self: center;
+    padding-left: 4rem;
+    
+}
+.footer-second__icons{
+    text-align: center;
+
+}
+    
+.fr-icon{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+}
